@@ -13,7 +13,7 @@ def collect_metrics():
     return {
         "CPU": psutil.cpu_percent(interval=1),
         "Memory": psutil.virtual_memory().percent,
-        "Disk": psutil.disk_usage("/").percent,
+        "Disk": psutil.disk_usage("/").percent, #("/") is for rootthe entire file system
     }
 
 
